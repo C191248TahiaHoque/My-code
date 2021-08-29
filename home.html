@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td>First Number</td>
+    <td>
+      <input name="firstNumber" id="firstNumber" placeholder="Enter First Number">
+
+    </td>
+  </tr>
+  <tr>
+    <td>Second Number</td>
+    <td>
+      <input name="secondNumber" id="secondNumber" placeholder="Enter Second Number">
+
+    </td>
+  </tr>
+  <tr>
+    <td>Result</td>
+    <td>
+      <input name="result" id="result" placeholder="Result">
+
+    </td>
+  </tr>
+  <tr>
+    <td>Result</td>
+    <td id="resultTD">
+
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input onclick="jsfunction()" type="button" name="submitButton" id="submitButton" value="Submit">
+
+    </td>
+  </tr>
+</table>
+</body>
+<script>
+    function jsfunction()
+    {
+      var firstNumber= document.getElementById('firstNumber').value;
+      var SecondNumber= document.getElementById('secondNumber').value;
+      alert(firstNumber);
+      alert(SecondNumber);
+      alert("Hello World");
+      var firstNumber=10;
+      var SecondNumber=20;
+      alert("The sum is="+(Number(firstNumber)+Number(SecondNumber)));
+      var result= firstNumber*SecondNumber;
+      document.getElementById('result').value=result;
+      document.getElementById('resultTD').innerHTML=result;
+      document.write("The sum is="+(Number(firstNumber)+Number(SecondNumber)));
+      var getFromuser =prompt("Enter a numerical value");
+      alert(getFromuser);
+      document.getElementById('submitButton').style.backgroundColor="blue";
+      confirm("Do you want to delete?");
+      const dataArray=["karim","rahim","john"];
+      for (let index=0;index<dataArray.length;index++)
+      {
+        document.write(dataArray[index]+'<br>');
+      }
+
+
+    }
+</script>
+</html>
